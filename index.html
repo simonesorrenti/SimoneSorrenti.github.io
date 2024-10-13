@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/logo.png" type="image/png">
+	<title>Home | Simone Sorrenti</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="sign">Simone Sorrenti</h1>
+            <nav>
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="portfolio.html" class="nav-item">Portfolio</a>
+                <!-- <a href="blog.html" class="nav-item">Blog</a> -->
+                <a href="experience.html" class="nav-item">Experience</a>
+                <a href="education.html" class="nav-item">Education</a>
+				<a href="certificate.html" class="nav-item">Certificate</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container content">
+        <div>
+            <h1 class="section-title">Home</h1>
+        </div>
+
+		<div class="home-container">
+			<div class="social-column">
+				<div class="social-icons-column">
+					<a href="https://www.facebook.com/profile.php?id=100012565503264"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.instagram.com/simonesorrenti21/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/simone-sorrenti/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/simonesorrenti"><i class="fa fa-github"></i></a>
+					<a href="cv\Simone Sorrenti - CV.pdf">CV</a>
+				</div>
+			</div>
+	
+			<div class="info-column">
+				<div class="info-row-me">
+					Hi, I'm <span class="sign">Simone Sorrenti</span>
+				</div>
+				<div class="info-row">
+					<span><strong>Birthday</strong>: 21 November 1995 | 28 years</span><br> 
+					<span><strong>Role</strong>: AI & Robotics Engineer</span><br>
+					<span><strong>Current Location</strong>: Milan, 20128, Italy</span><br>
+					<span><strong>Education</strong>: Master of Science in Machine Learning from Polytechnic University of Milan</span><br>
+					<span><strong>Hobbies</strong>: Artificial Intelligence, Nature, Hiking, Reading, Cooking, Film, Traveling, Gaming</span><br>
+					<span><strong>E-mail</strong>: simone.sorrenti.21@gmail.com | simone.sorrenti@mail.polimi.it</span><br>
+				</div>
+				<div class="info-row">
+					<h3>About Me</h3>
+					<p>With a Bachelor's degree in Informatics and a Master's in Machine Learning, I bring a blend of academic excellence and practical expertise. Currently, as an R&D AI & Robotics Engineer at TXT E-TECH in Milan, I focus on cutting-edge projects in aerospace and defense, including autonomous systems and anomaly detection for AI applications. My background as a full-stack developer in banking and insurance has honed my skills in interdisciplinary collaboration and tailored solution delivery.
+						<br><br>
+						I am particularly passionate about research and innovation, especially when it can have a positive impact on the social lives of individuals, contributing to their daily well-being. This motivation drives me to solve meaningful problems with integrity and teamwork.
+						<br><br>
+						I am also committed to continuous learning, actively pursuing courses on platforms like Coursera and Udemy, reading research papers, implementing code, and participating in personal projects and Kaggle competitions to further enhance my skills and knowledge in the field.
+						<br><br>
+						In my free time, I enjoy exploring the realm of Artificial Intelligence, immersing myself in nature, and going hiking to reconnect with the outdoors. I love reading various genres, experimenting with cooking new recipes, and indulging in films that inspire and entertain. Traveling fuels my curiosity about different cultures, and I find joy in gaming, which provides both relaxation and a sense of adventure. I believe that a holistic approach to life, combining passion and profession, can lead to extraordinary results.
+						</p>
+				</div>
+			</div>
+	
+			<div class="carousel-column">
+				<div class="carousel">
+					<div class="carousel-images">
+						<img src="img/me/image1.jpg" alt="Image 1">
+						<img src="img/me/image2.jpg" alt="Image 2">
+						<img src="img/me/image3.jpg" alt="Image 3">
+						<img src="img/me/image4.jpg" alt="Image 4">
+						<img src="img/me/image5.jpg" alt="Image 5">
+					</div>
+					<button class="img-button" onclick="changeImage(-1)">&#10094;</button>
+					<button class="img-button" onclick="changeImage(1)">&#10095;</button>
+				</div>
+			</div>
+		</div>
+    
+	</div>
+
+
+    <footer class="footer">
+		<p class="footer-text">Follow me!</p>
+		<div class="social-icons">
+			<a href="https://www.facebook.com/profile.php?id=100012565503264"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/simonesorrenti21/"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/simone-sorrenti/"><i class="fa fa-linkedin"></i></a>
+			<a href="https://github.com/simonesorrenti"><i class="fa fa-github"></i></a>
+			<a href="cv\Simone Sorrenti - CV.pdf">CV</a>
+		</div>
+        <p class="footer-text">E-mail: simone.sorrenti.21@gmail.com & simone.sorrenti@mail.polimi.it | Phone: +39 3899176181 | Location: Milan, Italy</p>
+        <p class="footer-text">© 2024 Simone Sorrenti. All rights reserved. Website designed and developed by Simone Sorrenti.</p>
+    </footer>
+
+
+    <script>
+        // script.js
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        function changeImage(direction) {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + direction + totalImages) % totalImages;
+            images[currentIndex].style.display = 'block';
+        }
+
+        images.forEach((img, index) => {
+            img.style.display = index === 0 ? 'block' : 'none';
+        });
+
+        setInterval(() => {
+            changeImage(1);
+        }, 3000);
+    </script>
+
+</body>
+
+</html>
