@@ -19,6 +19,7 @@ Author E-mail: simone.sorrenti.21@gmail.com, simone.sorrenti@mail.polimi.it
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 
+/* Reset e impostazioni di base */
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +34,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  margin-bottom: 10%;
 }
 
 .container {
@@ -40,6 +43,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+}
+
+.content {
+  margin-top: 150px;
 }
 
 .align-right {
@@ -56,7 +63,6 @@ a:hover {
 }
 
 /* HEADER */
-
 .header {
   position: fixed;
   top: 0;
@@ -67,11 +73,12 @@ a:hover {
   padding: 15px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  max-height: 150px;
 }
 
 .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   padding: 0 20px;
 }
@@ -99,7 +106,6 @@ a:hover {
 }
 
 /* HOME */
-
 .home-container {
   display: flex;
   margin-top: 60px;
@@ -144,33 +150,29 @@ a:hover {
   margin: 10px 0; 
   border-radius: 50%;
   object-fit: cover; 
+  width: 250px;
 }
 
 .img-button {
   background-color: #6E57E0;
   color: white;
   border: none;
-  border-color: none;
   border-radius: 50px;
   padding: 10px 20px; 
-  
 }
 
 .img-button:hover {
   background-color: #4a0072;
 }
 
-.img-button:focus, .img-button:active {
+.img-button:focus,
+.img-button:active {
   outline: none;
 }
 
 
+
 /* EDUCATION */
-.content {
-  padding-top: 100px; 
-  flex: 1;
-  padding-bottom: 100px;
-}
 
 .section-title {
   font-size: 36px;
@@ -240,6 +242,7 @@ th {
   text-align: center;
   margin: 0 auto; 
 }
+
 
 /* EXPERIENCE */
 
@@ -440,6 +443,7 @@ li {
   padding: 20px;
   width: 70%; 
 }
+
 .project:nth-child(even) {
   flex-direction: row-reverse; 
 }
@@ -469,9 +473,7 @@ li {
     text-align: left;   
 }
 
-
 /* FOOTER */
-
 .footer {
   position: fixed;
   bottom: 0;
@@ -497,4 +499,194 @@ li {
 .footer-text {
   margin: 0px;
   padding: 0px;
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .home-container {
+    flex-direction: column;
+
+  }
+
+  .info-column,
+  .carousel-column {
+    flex: 0 0 100%;
+  }
+
+  .info-column {
+    margin-top: 20px;
+  }
+
+  .social-column {
+    display: none;
+  }
+
+  .carousel img {
+    max-width: 100%; 
+    margin: 10px 0;
+  }
+
+  .nav-item {
+    font-size: 18px; 
+    margin-left: 10px; 
+  }
+
+  .content {
+    margin-top:150px;
+    margin-bottom: 40%;
+  }
+
+  .section-title {
+    font-size: 36px;
+    color: #6E57E0;
+  }
+  
+  .section-description {
+    font-size: 15px;
+    margin-bottom: 60px;
+    color: #555555;
+  }
+
+
+
+  .container-exp {
+    width: 100%; /* Imposta a piena larghezza per mobile */
+    padding: 10px; /* Riduce il padding */
+  }
+
+  .content-exp {
+      padding: 15px; /* Riduce il padding per mobile */
+      margin: 10px 0; /* Aggiunge margine verticale tra le esperienze */
+  }
+
+  .timeline {
+      max-width: 100%; /* Imposta a piena larghezza per mobile */
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .container-exp::after {
+    background-color: white;
+    border-color: white;
+  }
+
+  .timeline::after {
+    background-color: transparent;
+  }
+
+  .project img {
+    display: none; 
+  }
+  
+  .project-content {
+    width: 100%; 
+  }
+
+  .exp-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .header-content {
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .sign {
+    margin-bottom: 10px; 
+  }
+
+  .nav-item {
+    margin-left: 0; 
+    margin-bottom: 10px; 
+  }
+
+  .sign {
+    font-size: 30px; 
+  }
+
+  .info-row-me {
+    font-size: 24px; 
+  }
+
+  .carousel-column {
+    margin-bottom: 80px; 
+  }
+
+  .footer {
+    margin-top: 20px; 
+  }
+
+  .footer-text {
+    font-size: 12px; 
+  }
+
+
+  .subjects-table {
+      width: 100%;
+  }
+
+  .experience-btn {
+      width: 100%; 
+      margin-bottom: 10px;
+  }
+
+  .section-title {
+      font-size: 28px;
+  }
+
+  .section-description {
+      font-size: 14px;
+  }
+
+  .degree-title {
+      font-size: 24px;
+  }
+
+  .degree-info {
+      font-size: 14px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #6E57E0;
+    color: white;
+  }
+  
+  .final_grade {
+    font: 500 20px "Montserrat", sans-serif;
+  }
+  
+  .info {
+    padding-bottom: 20px;
+    font: 500 10px "Montserrat", sans-serif;
+    text-align: center;
+    margin: 0 auto; 
+    width: 100%;
+  }
+
+  .project-title {
+    size: 20px;
+    font-size: 20px;
+  }
+
+  
 }
