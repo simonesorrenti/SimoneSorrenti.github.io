@@ -1,5 +1,3 @@
-CV Button
-
 Home:
 - Improve About me
 

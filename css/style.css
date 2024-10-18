@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-  width: 60%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -89,6 +89,7 @@ a:hover {
   color: black;
   margin-left: 20px;
   text-decoration: none;
+  font-size: 1vw;
 }
 
 .nav-item.active {
@@ -103,6 +104,7 @@ a:hover {
 
 .sign {
   font: 500 40px/50px "Caveat", sans-serif;
+  font-size: 2vw;
 }
 
 /* HOME */
@@ -489,7 +491,7 @@ li {
   color: white;
   margin-right: 10px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 15px;
 }
 
 .social-icons a:hover {
@@ -499,6 +501,7 @@ li {
 .footer-text {
   margin: 0px;
   padding: 0px;
+  font-size: 12px;
 }
 
 /* Media Queries per dispositivi mobili */
@@ -607,15 +610,12 @@ li {
 
   .sign {
     margin-bottom: 10px; 
+    font-size: 30px; 
   }
 
   .nav-item {
     margin-left: 0; 
     margin-bottom: 10px; 
-  }
-
-  .sign {
-    font-size: 30px; 
   }
 
   .info-row-me {
@@ -631,7 +631,7 @@ li {
   }
 
   .footer-text {
-    font-size: 12px; 
+    font-size: 10px; 
   }
 
 
