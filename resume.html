@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Simone Sorrenti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="antialiased">
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section class="py-12 md:py-16 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Resume</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                Explore my professional and academic journey below, or download the complete file.
+            </p>
+            <a href="assets/docs/SimoneSorrenti_EN_Resume.pdf" download class="btn-primary inline-flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                <span>Download Resume</span>
+            </a>
+        </section>
+
+        <!-- SUMMARY Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 md:p-10 mb-8 resume-section">
+            <h2 class="text-3xl font-bold mb-6">SUMMARY</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                AI/R&D Engineer and MSc in Computer Science with extensive experience in robotics, computer vision, and deep learning across aerospace, satellite imaging, and industrial automation. I have delivered high-impact solutions, including few-shot classification pipelines achieving 99.9% accuracy and automated anomaly detection that reduced inspection times by 50%. Skilled in Python, C++, ROS2, PyTorch, TensorFlow, and FAISS, I excel at leading cross-functional technical projects and rapidly adapting to new technologies, translating complex challenges into scalable, efficient solutions.
+            </p>
+        </section>
+
+        <!-- SKILLS & QUALIFICATIONS Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 md:p-10 mb-8 resume-section">
+            <h2 class="text-3xl font-bold mb-6">SKILLS & QUALIFICATIONS</h2>
+            <ul class="text-lg text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+                <li><strong>Programming Languages:</strong> Python, Java, C++, SQL, JavaScript, PHP, HTML, CSS</li>
+                <li><strong>Technologies & Tools:</strong> ROS2, Deep Learning, Computer Vision, CNN, LLM, Transformers, Git, Linux, Vector DBs</li>
+                <li><strong>Frameworks & Libraries:</strong> PyTorch, TensorFlow, OpenCV, HuggingFace, Pandas, NumPy, Matplotlib, NLTK, FAISS</li>
+                <li><strong>Machine Learning & AI:</strong> Object Detection, OCR, Few-Shot Classification, Weakly Supervised Segmentation, Anomaly Detection, Metric Learning, Audio Verification</li>
+                <li><strong>Software & Dev Skills:</strong> Backend/Frontend Development, Data Pipelines, API Development, CUDA Optimization</li>
+                <li><strong>Languages:</strong> Italian (Native), English (Intermediate)</li>
+            </ul>
+        </section>
+
+
+        <!-- PROFESSIONAL EXPERIENCE Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 md:p-10 mb-8 resume-section">
+            <h2 class="text-3xl font-bold mb-6">PROFESSIONAL EXPERIENCE</h2>
+            <div class="space-y-6">
+
+                <!-- TXT E-Tech -->
+                <div>
+                    <h3 class="text-2xl font-semibold">R&D AI Engineer - Aerospace & Defence | TXT E-Tech</h3>
+                    <p class="text-gray-500 italic mb-2">Milan, Italy | Jun 2024 — Present</p>
+                    <ul class="text-lg text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+                        <li><strong>Robotic Arm for Aircraft Cockpit Testing with Computer Vision and Aural Recognition:</strong>
+                            <ul class="list-disc list-inside ml-6 space-y-1">
+                                <li><strong>ROS2 Infrastructure:</strong> Developed C++/Python ROS2 frameworks for data exchange across robotic, visual, and audio modules.</li>
+                                <li><strong>Data Pipelines:</strong> Built data pipelines with data augmentation for model training and evaluation.</li>
+                                <li><strong>Object Detection & OCR:</strong> Applied RT-DETRv2 for cockpit component localization; integrated EasyOCR/Florence2 for text recognition, optimizing with CUDA.</li>
+                                <li><strong>Few-Shot Classification of Cockpit Panels:</strong> Developed a pipeline to classify localized avionics panels with only one reference image per class, achieving 99.9% accuracy while drastically reducing annotation effort.
+                                    <ul class="list-disc list-inside ml-6">
+                                        <li>Extracted embeddings with DINOv3 and stored reference vectors in a FAISS database.</li>
+                                        <li>Applied a KNN ranking strategy combining max similarity, trimmed mean, std, and normalized counts.</li>
+                                        <li>Enhanced reference robustness through data augmentation (rotation, perspective, brightness, contrast, scale) and fine-tuned embedding space with Proxy-Anchor metric learning.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Audio Verification:</strong> Created an audio matching system using MFCC, DTW, and cosine similarity.</li>
+                                <li><strong>Dataset Creation:</strong> Led dataset creation, reducing annotation and post-processing time.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Panel Inspection Analysis for Identifying Defective Solar Cells in Satellites:</strong>
+                            <ul class="list-disc list-inside ml-6 space-y-1">
+                                <li><strong>Anomaly Detection:</strong> Trained autoencoders/classifiers on patch-based high-resolution solar images, achieving 95% recall and 75% precision.</li>
+                                <li><strong>Object Detection:</strong> Applied DETR for solar cell localization with optimized inference performance.</li>
+                                <li><strong>Inference Backend:</strong> Built a Python backend for batch processing, optimized pre/post-processing, and real-time anomaly reporting through controller integration.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Polytechnic University of Milan -->
+                <div>
+                    <h3 class="text-2xl font-semibold">Student Researcher - European Project: Waste Detection from Satellite Images | Polytechnic University of Milan</h3>
+                    <p class="text-gray-500 italic mb-2">Milan, Italy | Feb 2023 — Apr 2024</p>
+                    <ul class="text-lg text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+                        <li><strong>Model & Pipeline Development:</strong> Built CNN and Transformer models for waste localization, achieving 90% accuracy. Designed training pipelines with data augmentation, loss optimization, and hyperparameter tuning.</li>
+                        <li><strong>Weakly Supervised Segmentation:</strong> Applied landfill localization using weak supervision (Hierarchical Heatmap Generation, Multiple Instance Learning, Grad-CAM) without pixel-level annotations.</li>
+                    </ul>
+                </div>
+
+                <!-- Blue Reply -->
+                <div>
+                    <h3 class="text-2xl font-semibold">IT Consultant - Insurance & Banking | Blue Reply</h3>
+                    <p class="text-gray-500 italic mb-2">Milan, Italy | Jun 2019 — Aug 2020</p>
+                    <ul class="text-lg text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+                        <li><strong>Backend & API Development:</strong> Developed backend algorithms and API microservices for customizable document templates, automating layout processing and optimizing system integration.</li>
+                        <li><strong>Frontend Development:</strong> Built dynamic interfaces to enhance user experience and performance.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- ACADEMIC BACKGROUND Section -->
+        <section class="bg-white rounded-lg shadow-md p-6 md:p-10 resume-section">
+            <h2 class="text-3xl font-bold mb-6">ACADEMIC BACKGROUND</h2>
+            <div class="space-y-6">
+
+                <div>
+                    <h3 class="text-2xl font-semibold">MSc in Computer Science | Polytechnic University of Milan</h3>
+                    <p class="text-gray-500 italic mb-2">Sep 2020 — Apr 2024 | GPA: 3.74/4.0</p>
+                    <ul class="text-lg text-gray-700 leading-relaxed list-disc list-inside">
+                        <li>Thesis: Detection of Illegal Landfills using Deep Learning: A Weakly Supervised Approach (Perivallon: European Project)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold">BSc in Computer Engineering | University of Bari Aldo Moro</h3>
+                    <p class="text-gray-500 italic mb-2">Sep 2014 — Oct 2018 | GPA: 3.79/4.0</p>
+                    <ul class="text-lg text-gray-700 leading-relaxed list-disc list-inside">
+                        <li>Thesis: Solar Radiation Prediction through Machine Learning Algorithms</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

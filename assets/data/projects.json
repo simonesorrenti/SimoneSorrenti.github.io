@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cockpit-robotic-arm",
+    "title": {
+      "en": "Robotic Arm for Aircraft Cockpit Testing"
+    },
+    "description": {
+      "en": "Developed a comprehensive ROS2 framework in C++/Python for robotic, visual, and audio modules to test aircraft cockpits. Built data pipelines with augmentation for model training and evaluation, applied RT-DETRv2 for component localization, and integrated EasyOCR/Florence2 for text recognition with CUDA optimization. Implemented a few-shot classification pipeline for cockpit panels using DINOv3 embeddings stored in FAISS and KNN ranking, achieving 99.9% accuracy. Additionally, designed an audio verification system using MFCC, DTW, and cosine similarity, and led dataset creation to reduce annotation and post-processing time."
+    },
+    "image": "https://www.industriaitaliana.it/wp-content/uploads/2024/11/Schermata-2024-11-05-alle-10.25.07.png",
+    "alt": {
+      "en": "Thumbnail of Robotic Arm Project"
+    },
+    "technologies": ["Python", "C++", "ROS2", "Computer Vision", "Deep Learning", "FAISS", "CUDA"],
+    "link": "https://www.industriaitaliana.it/arto-cobot-test-leonardo-aerospace-txt-group/"
+  },
+  {
+    "id": "panel-inspection-solar",
+    "title": {
+      "en": "Panel Inspection for Defective Satellite Solar Cells"
+    },
+    "description": {
+      "en": "Trained autoencoders and classifiers on patch-based high-resolution solar images to detect defective cells with 95% recall and 75% precision. Applied DETR for precise localization of solar panels and developed a Python backend to handle batch processing, optimized pre/post-processing, and real-time anomaly reporting integrated with the controller. Managed the end-to-end pipeline for data collection, training, inference, and result visualization."
+    },
+    "image": "https://www.mdpi.com/micromachines/micromachines-16-00437/article_deploy/html/images/micromachines-16-00437-g001-550.jpg",
+    "alt": {
+      "en": "Thumbnail of Satellite Panel Inspection Project"
+    },
+    "technologies": ["Python", "TensorFlow", "DETR", "Computer Vision", "Anomaly Detection"],
+    "link": "projects.html"
+  },
+  {
+    "id": "perivallon-waste-detection",
+    "title": {
+      "en": "Illegal Waste Detection from Satellite Images"
+    },
+    "description": {
+      "en": "Developed CNN and Vision Transformer models to detect illegal landfills in Europe using weak supervision and hierarchical heatmaps. Addressed scarce annotated data with augmentation, class imbalance via oversampling and class weighting, and varying image sizes through bilinear interpolation and zero-padding. Applied Multiple Instance Learning (MIL) and Grad-CAM for localization without pixel-level annotations, increasing classification accuracy from 80% to 90%."
+    },
+    "image": "assets/img/perivallon.png",
+    "alt": {
+      "en": "Thumbnail of Perivallon Project"
+    },
+    "technologies": ["Python", "TensorFlow", "CNN", "Vision Transformer", "Weakly Supervised Learning", "Remote Sensing"],
+    "link": "https://github.com/simonesorrenti/Perivallon-Illegal-Landfill-Detection/blob/main/ExecutiveSummary_SorrentiSimone.pdf"
+  },
+  {
+    "id": "clip-exploration",
+    "title": {
+      "en": "CLIP Exploration for Image and Text Tasks"
+    },
+    "description": {
+      "en": "Evaluated CLIP models with different image and text encoders (ViT16, BERT, ResNet) for zero-shot classification, image retrieval, and captioning. Investigated the effect of encoder complexity (layers, heads, embedding size) on performance across COCO, Roco (medical), and FashionProduct datasets. Trained decoders using CLIP embeddings for image captioning and performed clustering and retrieval tasks to assess model capabilities across generic, medical, and fashion contexts."
+    },
+    "image": "assets/img/clip.png",
+    "alt": {
+      "en": "Thumbnail of CLIP Exploration Project"
+    },
+    "technologies": ["Python", "TensorFlow", "CLIP", "Transformers", "Zero-shot Learning", "Image Captioning"],
+    "link": "https://github.com/simonesorrenti/CLIP/blob/main/Challenges%20and%20Opportunities%20in%20the%20Use%20of%20CLIP%20-%20A%20Comparative%20Study%20for%20Generic%2C%20Medical%2C%20and%20Fashion%20Contexts.pdf"
+  },
+  {
+    "id": "image-processing-models",
+    "title": {
+      "en": "Mathematical Models for Image Processing"
+    },
+    "description": {
+      "en": "Applied mathematical and data-driven methods for image processing, including denoising, inpainting, anomaly detection, and object detection. Implemented sparse coding with OMP and convex optimization (ISTA, IRLS, LASSO), dictionary learning with KSVD, and robust fitting methods such as RANSAC, LMEDS, and Hough transform. Explored Fourier transforms, wavelets, and local polynomial approximation to create effective image modeling pipelines."
+    },
+    "image": "assets/img/image_processing.png",
+    "alt": {
+      "en": "Thumbnail of Image Processing Project"
+    },
+    "technologies": ["Python", "NumPy", "OpenCV", "Sparse Coding", "Linear Algebra", "Image Processing"],
+    "link": "https://github.com/simonesorrenti/Mathematical-Models-and-Methods-For-Image-Processing"
+  },
+  {
+    "id": "question-answering-nlp",
+    "title": {
+      "en": "Question Answering System with NLP"
+    },
+    "description": {
+      "en": "Fine-tuned extractive (BERT, RoBERTa) and generative (GPT-2, T5) language models for question answering using the SQuAD dataset. Developed pipelines for answer extraction from text and contextual answer generation, leveraging Hugging Face libraries. Focused on model evaluation with F1 score (82.94) and optimizing training to balance precision and recall across multiple tasks."
+    },
+    "image": "assets/img/question_answering.png",
+    "alt": {
+      "en": "Thumbnail of NLP Question Answering Project"
+    },
+    "technologies": ["Python", "PyTorch", "BERT", "GPT-2", "T5", "NLP", "Transformers"],
+    "link": "https://github.com/simonesorrenti/Question-Answering"
+  }
+]
